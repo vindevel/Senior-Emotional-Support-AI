@@ -1,6 +1,7 @@
 # Senior-Emotional-Support-AI (안녕, 보리야!)
 
-> **AI-based Conversational Emotional Support System for Seniors Living Alone** > 독거노인의 정서적 고립 해소를 위한 멀티모달(음성+표정) 감정 케어 및 생활 지원 시스템
+> **AI-based Conversational Emotional Support System for Seniors Living Alone**
+> 독거노인의 정서적 고립 해소를 위한 멀티모달(음성+표정) 감정 케어 및 생활 지원 시스템
 
 **🏆 2025 참빛설계학기 성과발표회 최우수상 수상작**
 
