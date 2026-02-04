@@ -111,6 +111,7 @@
 ## Directory Structure
 ```text
 Senior-Emotional-Support-AI/
+├── docs/                        # 시스템 설계 및 구현 보고서 (시연 사진 포함)
 ├── project/
 │   └── module/
 │       ├── audio/               # 음성 인식(STT) 및 합성(TTS) 모듈
