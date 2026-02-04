@@ -173,6 +173,6 @@ Senior-Emotional-Support-AI/
 ## Resources
 * **Project Report:** [시스템 설계 및 구현 보고서 (PDF)](./docs/System_Design_Report.pdf)
 * **Model Weights:** 용량 제한으로 인해 학습된 모델 가중치 파일은 포함되어 있지 않습니다. 상세한 학습 과정은 보고서를 참고해 주세요.
-* 각종 출처는 시스템 설계 및 구현 보고서 마지막 페이지에 기재되어 있습니다.
+* 각종 출처는 [시스템 설계 및 구현 보고서 (PDF)](./docs/System_Design_Report.pdf) 마지막 페이지에 기재되어 있습니다.
 ---
 © 2025. Team Annyeong-Bori. All rights reserved.
