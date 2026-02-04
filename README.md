@@ -2,8 +2,6 @@
 
 > **AI-based Conversational Emotional Support System for Seniors Living Alone** > 독거노인의 정서적 고립 해소를 위한 멀티모달(음성+표정) 감정 케어 및 생활 지원 시스템
 
-![Grand Prize](https://img.shields.io/badge/Award-Grand%20Prize-FFD700?style=for-the-badge&logo=github&logoColor=black)
-<br>
 **🏆 2025 참빛설계학기 성과발표회 최우수상 수상작**
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://www.python.org/)
@@ -111,13 +109,57 @@
 <br>
 
 ## Directory Structure
-Senior-Emotional-Support-AI/ ├── project/ │ └── module/ │ ├── face/ # HSEmotion Face Analysis Module │ ├── mental-report/ # React Frontend Source │ ├── routes/ # Flask API Routes │ ├── schedule/ # Scheduler Logic │ ├── utils/ # Helper Functions │ ├── db/ # Database Connection │ ├── main.py # Application Entry Point │ ├── report_api.py # Report Generation API │ └── NLP_module_flask.ipynb # AI Model Training Code ├── docs/ # Project Report & Images └── requirements.txt
+```text
+Senior-Emotional-Support-AI/
+├── project/
+│   └── module/
+│       ├── audio/               # 음성 인식(STT) 및 합성(TTS) 모듈
+│       │   ├── stt.py           # Whisper 모델 기반 STT 로직
+│       │   ├── tts.py           # 텍스트-음성 변환
+│       │   ├── wakeword.py      # 호출어("보리야") 감지 (Porcupine)
+│       │   ├── recorder.py      # 마이크 입력 및 녹음 처리
+│       │   └── remote_wakeword.py # 원격 호출 처리 로직
+│       ├── db/                  # 데이터베이스 연결 및 관리
+│       │   ├── database_connect.py # MySQL Connection
+│       │   ├── emotion_logger.py   # 실시간 감정 데이터 로깅
+│       │   ├── avg_daily.py        # 일간 감정 통계 집계
+│       │   └── user.py             # 사용자 정보
+│       ├── face/                # 표정 인식 모듈
+│       │   ├── HSEmotion.py     
+│       │   └── run_emotion_detection.py 
+│       ├── mental-report/       # React Frontend Application
+│       │   ├── public/
+│       │   ├── src/             # 리포트 UI 소스 코드
+│       │   ├── package.json     
+│       │   └── start_app.bat    # 리포트 실행 스크립트
+│       ├── routes/              # Flask RESTful API 라우팅
+│       │   ├── conversation.py  
+│       │   ├── face.py          
+│       │   └── user.py          
+│       ├── schedule/            # 생활 관리 및 스케줄러
+│       │   ├── general_schedule_data/  # 일반 일정 데이터 (JSON)
+│       │   ├── medication_schedules_json/ # 복약 일정 데이터 (JSON)
+│       │   ├── emotion_recommendation.py # 감정 기반 콘텐츠(시/음악) 추천
+│       │   ├── medication_schedule.py    # 복약 알림 로직
+│       │   ├── notifier.py               # 알림 모듈
+│       │   └── night_talk.py             # 심야 시간 대화 제어
+│       ├── utils/               # 유틸리티 및 설정
+│       │   ├── colab_api.py     # Colab GPU 서버 연동 유틸
+│       │   └── exit_handler.py  # 프로그램 종료 처리
+│       ├── main.py              # 메인 실행 파일 (Application Entry Point)
+│       ├── report_api.py        # 리포트 API 서버 실행
+│       ├── NLP_module_flask.ipynb # AI 모델 실행 환경 노트북
+│       ├── porcupine_params_ko.pv # Wake-word 모델 파라미터
+│       ├── stopwords-ko.txt       # 불용어 사전
+│       └── PRETENDARD-REGULAR.TTF # 폰트 파일
+├── .gitignore                   # Git 제외 파일 목록
+└── README.md                    # 프로젝트 문서
 
 <br>
 
 ## Resources
 * **Project Report:** [시스템 설계 및 구현 보고서 (PDF)](/docs/System_Design_Report.pdf)
 * **Model Weights:** 용량 제한으로 인해 학습된 모델 가중치 파일은 포함되어 있지 않습니다. 상세한 학습 과정은 보고서를 참고해 주세요.
-
+* 각종 출처는 시스템 설계 및 구현 보고서 마지막 페이지에 기재되어 있습니다.
 ---
 © 2025. Team Annyeong-Bori. All rights reserved.
