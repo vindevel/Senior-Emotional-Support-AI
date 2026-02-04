@@ -4,7 +4,7 @@
 
 > 독거노인의 정서적 고립 해소를 위한 멀티모달(음성+표정) 감정 케어 및 생활 지원 시스템
 
-**🏆 2025 참빛설계학기 성과발표회 최우수상 수상작**
+**🏆 2025 참빛설계학기 성과발표회 최우수상 수상**
 
 [![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0-lightgrey?logo=flask)](https://flask.palletsprojects.com/)
@@ -35,6 +35,15 @@
 
 <br>
 
+## 시연 예시
+자세한 사진 내용은 시스템 설계 및 구현 보고서에 첨부되어 있습니다.
+
+[대화]
+<img width="1778" height="403" alt="image" src="https://github.com/user-attachments/assets/e8d9a503-2921-4168-9a53-e288cc67e30d" />
+
+[심리 분석 리포트]
+<img width="1715" height="450" alt="image" src="https://github.com/user-attachments/assets/48e17b06-a34f-42a7-aa38-68b91ce413b3" />
+
 ## System Architecture
 <img width="850" height="307" alt="image" src="https://github.com/user-attachments/assets/f2e4315b-9dd5-4995-93ab-e720a6bd7c47" />
 
@@ -53,18 +62,18 @@
 **Role: Backend & AI Logic Developer**
 팀장으로서 프로젝트의 전체적인 방향성을 설정하고 일정을 관리하였으며 AI 모델 파이프라인 구축 및 백엔드 아키텍처 설계 역할을 맡았습니다.
 
-### AI Pipeline & Model Selection
+### 1. AI Pipeline & Model Selection
 * **표정 분석 모델:** HSEmotion 기반 표정 분석 모델 평가를 위한 데이터셋 구성 및 전처리, 성능 테스트를 통한 최종 모델 선정
 * **음성 인식 및 대화 제어:** Whisper 모델 기반 STT(Speech-to-Text) 기능 구현 및 대화 지속 구조 설계, "그만", "멈춰" 등 대화 종료 명령어 인식 로직 개발.
 
-### Backend Architecture & Database
+### 2. Backend Architecture & Database
 * **Database Schema Design:** 사용자, 감정 로그, 스케줄 관리를 위한 효율적인 **MySQL 데이터베이스 스키마 설계 및 구축**
 * **Real-time Data Pipeline:** 표정 기반 감정 분석 결과를 실시간으로 DB에 적재하는 **데이터 로깅 로직 구현**
 * **Scheduled Data Aggregation:** 매일 자정 감정 데이터를 집계하여 일간 평균을 저장하는 **스케줄링 및 배치 처리 로직 개발**
 * **System Modularization:** 초기 통합되어 있던 자연어 처리(NLP)와 컴퓨터 비전(CV) 로직을 기능별로 **모듈화**하여 코드 유지보수성과 확장성 확보.
 * **RESTful API Development:** Flask를 사용하여 심리 분석 리포트 데이터 및 AI 추론 결과를 제공하는 **RESTful API** 설계 및 구현.
 
-### Key Feature Implementation
+### 3. Key Feature Implementation
 * **Life Care System:** 복약 알림 및 일정 관리 기능의 설계 및 스케줄러 연동.
 * **Emotion-based Content:** 사용자 감정 상태와 시간대를 분석하여 맞춤형 콘텐츠(시, 클래식 음악)를 자동으로 제공하는 알고리즘 구현.
 * **Data Visualization:** 사용자 발화 데이터를 분석하여 단어 빈도수 기반의 **Word Cloud 시각화** 기능 개발.
