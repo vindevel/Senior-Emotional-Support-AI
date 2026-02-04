@@ -36,7 +36,7 @@
 <br>
 
 ## 시연 예시
-자세한 사진 내용은 시스템 설계 및 구현 보고서에 첨부되어 있습니다.
+자세한 사진 내용은 [시스템 설계 및 구현 보고서 (PDF)](./docs/System_Design_Report.pdf)에 첨부되어 있습니다.
 
 [대화]
 <img width="1778" height="403" alt="image" src="https://github.com/user-attachments/assets/e8d9a503-2921-4168-9a53-e288cc67e30d" />
@@ -81,9 +81,9 @@
 <br>
 
 ## AI Model Performance
-* **Emotion Classification (KoBERT):** Accuracy **0.84** (3-class), ** Accuracy **0.78** (5-class)
-* **Chat Generation (KoGPT2):** Perplexity **2.75**, Accuracy 0.77 (Fine-tuned on Wellness data)
-* **Face Analysis (HSEmotion):** F1-score **0.89** - CPU 실시간 처리 최적화
+* **Emotion Classification (KoBERT)**: Accuracy **0.84** (3-class), Accuracy **0.78** (5-class)
+* **Chat Generation (KoGPT2)**: Perplexity **2.75**, Accuracy 0.77 (Fine-tuned on Wellness data)
+* **Face Analysis (HSEmotion)**: F1-score **0.89** - CPU 실시간 처리 최적화
 
 <br>
 
@@ -171,7 +171,7 @@ Senior-Emotional-Support-AI/
 <br>
 
 ## Resources
-* **Project Report:** [시스템 설계 및 구현 보고서 (PDF)] -> docs 디렉토리 안에 첨부되어 있습니다.
+* **Project Report:** [시스템 설계 및 구현 보고서 (PDF)](./docs/System_Design_Report.pdf)
 * **Model Weights:** 용량 제한으로 인해 학습된 모델 가중치 파일은 포함되어 있지 않습니다. 상세한 학습 과정은 보고서를 참고해 주세요.
 * 각종 출처는 시스템 설계 및 구현 보고서 마지막 페이지에 기재되어 있습니다.
 ---
