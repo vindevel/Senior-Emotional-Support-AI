@@ -1,0 +1,19 @@
+# --- 모델 및 대용량 파일 제외 ---
+3_KoBERT_model/
+5_KoBERT_model/
+KoGPT2_model/
+*.pt
+*.bin
+*.h5
+
+# --- 실행 파일 및 빌드 폴더 제외 ---
+ffmpeg-7.1-essentials_build/
+__pycache__/
+*.exe
+*.dll
+
+# --- 개인 설정 및 OS 파일 ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
