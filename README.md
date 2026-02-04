@@ -154,6 +154,7 @@ Senior-Emotional-Support-AI/
 │       └── PRETENDARD-REGULAR.TTF # 폰트 파일
 ├── .gitignore                   # Git 제외 파일 목록
 └── README.md                    # 프로젝트 문서
+```
 
 <br>
 
