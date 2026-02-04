@@ -60,6 +60,7 @@
 
 ## My Contribution
 **Role: Backend & AI Logic Developer**
+
 안녕, 보리야!(총 4명) 팀장으로서 프로젝트의 전체적인 방향성을 설정하고 일정을 관리하였으며 AI 모델 파이프라인 구축 및 백엔드 아키텍처 설계 역할을 맡았습니다.
 
 ### 1. AI Pipeline & Model Selection
